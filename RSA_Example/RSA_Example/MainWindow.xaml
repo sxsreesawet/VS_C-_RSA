@@ -7,12 +7,13 @@
         mc:Ignorable="d"
         Title="RSA Example" Height="315" Width="525" Icon="./Resources/rsa_icon2.ico" ResizeMode="NoResize">
     <Grid>
+        <Button x:Name="cmdGenerate" Content="Generate" HorizontalAlignment="Left" Margin="210,38,0,0" VerticalAlignment="Top" Width="75" Height="45" IsEnabled="False" Click="cmdGenerate_Click"/>
+        <Label x:Name="lbl1" Content="test" HorizontalAlignment="Left" Margin="10,195,0,0" VerticalAlignment="Top" Width="499" Height="82"/>
         <Label Content="Prime (P)" HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top"/>
         <Label Content="Prime (Q)" HorizontalAlignment="Left" Margin="30,61,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtP1" HorizontalAlignment="Left" Height="20" Margin="100,35,0,0" TextWrapping="Wrap" Text="Enter Number" VerticalAlignment="Top" Width="100" TextAlignment="Center" FontSize="10" TextChanged="txtP1_TextChanged"/>
         <TextBox x:Name="txtP2" HorizontalAlignment="Left" Height="20" Margin="100,65,0,0" TextWrapping="Wrap" Text="Enter Number" VerticalAlignment="Top" Width="100" TextAlignment="Center" FontSize="10" TextChanged="txtP2_TextChanged"/>
         <Label Content="Message" HorizontalAlignment="Left" Margin="10,164,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="cmdGenerate" Content="Generate" HorizontalAlignment="Left" Margin="210,38,0,0" VerticalAlignment="Top" Width="75" Height="45" IsEnabled="False"/>
-        <Label x:Name="lbl1" Content="test" HorizontalAlignment="Left" Margin="10,195,0,0" VerticalAlignment="Top" Width="499" Height="82"/>
+        
     </Grid>
 </Window>

@@ -45,13 +45,15 @@ namespace RSA_Example
                 else
                 {
                     cmdGenerate.IsEnabled = false;
-                    lbl1.Content = "drop up block";
+                    lbl1.Content = "Please Enter a Prime number";
                 }
-            }  
-          
-
-
-
+            }
+            else
+            {
+                cmdGenerate.IsEnabled = false;
+                lbl1.Content = "Please Enter a Prime number";
+            }
+                
         }
 
 
@@ -71,10 +73,20 @@ namespace RSA_Example
                 else
                 {
                     cmdGenerate.IsEnabled = false;
-                    lbl1.Content = "drop down block";
+                    lbl1.Content = "Please Enter a Prime number";
                 }
             }
+            else
+            {
+                cmdGenerate.IsEnabled = false;
+                lbl1.Content = "Please Enter a Prime number";
+            }
             
+        }
+
+        private void cmdGenerate_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
